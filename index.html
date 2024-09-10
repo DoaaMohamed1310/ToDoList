@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To_Do_List</title>
+        <!-- render element normaly -->
+        <link rel="stylesheet" href="style/normalize.css">
+        <!-- font awesome libaray -->
+        <link rel="stylesheet" href="style/all.min.css">
+        <!-- font family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <!-- line icon -->
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+        <!-- bootstrap style -->
+        <link rel="stylesheet" href="./style/bootstrap.min.css">
+        <!-- file css -->
+        <link rel="stylesheet" href="./style/style.css">
+      </head>
+    <body class="position-relative">
+      <div class="massage text-white p-3 bg-body-tertiary position-fixed top-0 start-0 opacity-0  fw-medium rounded "> </div>
+      <div class="container d-flex justify-content-center align-items-center pt-5">
+        <div class="toDoList bg-dark p-3 rounded-2 w-100">
+          <h3 class="text-secondary mb-4">To_Do_List 📋</h3>
+          <div class="form w-100 d-flex justify-content-center p-2 rounded">
+            <input class="p-2 w-100 text-white listInput" type="text" name="listValue" id="listValue" placeholder="Add new task">
+            <button type="button" class="btn btn-info w-25 add"><i class="fa-solid fa-plus"></i></button>
+            <button type="button" class="btn btn-warning w-25 editInput d-none" onclick="updateTask()"><i class="fa-solid fa-edit"></i></button>
+          </div>
+          <div class="form-check form-switch mt-2">
+            <input class="form-check-input" type="checkbox" role="switch" id="task">
+            <label class="form-check-label text-white" for="task">Status Task</label>
+          </div>
+          <h4 class="text-secondary pt-3">tasks</h4>
+          <div class="result mt-2">
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- bootstrap js -->
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <!-- js file -->
+      <script src="./js/main.js"></script>
+    </body>
+</html>

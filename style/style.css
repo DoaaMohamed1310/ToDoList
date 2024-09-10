@@ -1,0 +1,32 @@
+
+.form{
+    border: 1px solid #eee;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    caret-color: #eee;
+}
+i{
+    cursor: pointer;
+}
+.box{
+    background-color: #ced4da24;
+    animation-name:fadeIn ;
+    animation-duration:1s ;
+    animation-timing-function: linear;
+}
+@keyframes fadeIn {
+    from{
+        opacity: .3;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+    }
+}
+.massage{
+    transition: .5s;
+}
